@@ -1,4 +1,3 @@
-const {App} = require('./app');
+const {Input} = require('./input');
 
-// console.log(helloLog());
-module.exports.App = App;
+module.exports.Input = Input;
