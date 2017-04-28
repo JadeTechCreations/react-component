@@ -14,16 +14,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Input = function (_React$Component) {
-  _inherits(Input, _React$Component);
+var Select = function (_React$Component) {
+  _inherits(Select, _React$Component);
 
-  function Input() {
-    _classCallCheck(this, Input);
+  function Select() {
+    _classCallCheck(this, Select);
 
-    return _possibleConstructorReturn(this, (Input.__proto__ || Object.getPrototypeOf(Input)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Select.__proto__ || Object.getPrototypeOf(Select)).apply(this, arguments));
   }
 
-  _createClass(Input, [{
+  _createClass(Select, [{
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -35,7 +35,7 @@ var Input = function (_React$Component) {
     }
   }]);
 
-  return Input;
+  return Select;
 }(_react2.default.Component);
 
-module.exports.Input = Input;
+module.exports.Select = Select;
