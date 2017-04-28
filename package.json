@@ -2,7 +2,7 @@
   "name": "component",
   "version": "0.0.1",
   "description": "React component module",
-  "main": "dist/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack",
     "transpile": "babel src --presets babel-preset-es2015 --out-dir dist"
