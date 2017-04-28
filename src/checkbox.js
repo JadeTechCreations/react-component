@@ -6,4 +6,4 @@ class Checkbox extends React.Component {
   }
 }
 
-module.exports.Checkbox = Checkbox;
+export default Checkbox;
