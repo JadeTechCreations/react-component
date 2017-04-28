@@ -2,9 +2,10 @@
   "name": "component",
   "version": "0.0.1",
   "description": "React component module",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/webpack",
+    "transpile": "babel src --presets babel-preset-es2015 --out-dir dist"
   },
   "author": "Jerome Carey",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "react-dom": "^0.14.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.5.1",
     "babel-loader": "^6.2.2",
     "babel-plugin-transform-object-assign": "^6.22.0",
