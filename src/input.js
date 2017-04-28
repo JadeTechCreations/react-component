@@ -1,9 +1,9 @@
 import React from 'react';
 
-class App extends React.Component {
+class Input extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
   }
 }
 
-module.exports.App = App;
+module.exports.Input = Input;
