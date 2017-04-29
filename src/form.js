@@ -5,6 +5,7 @@ class Form extends React.Component {
     return (
       <form>
         {this.props.name}
+        {this.props.children}
       </form>
     );
   }
