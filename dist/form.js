@@ -27,9 +27,8 @@ var Form = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'h1',
+        'form',
         null,
-        'Hello, ',
         this.props.name
       );
     }

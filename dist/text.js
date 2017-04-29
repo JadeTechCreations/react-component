@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -24,14 +24,9 @@ var Text = function (_React$Component) {
   }
 
   _createClass(Text, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      return _react2.default.createElement(
-        'h1',
-        null,
-        'Hello, ',
-        this.props.name
-      );
+      return _react2.default.createElement("input", { type: "text", name: "name", value: this.props.name });
     }
   }]);
 
