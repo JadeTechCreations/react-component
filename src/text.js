@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 
 class Text extends React.Component {
   render() {

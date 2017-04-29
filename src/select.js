@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 
 class Select extends React.Component {
   render() {
@@ -6,13 +6,14 @@ class Select extends React.Component {
 
     return (
       <div className={containerClassName}>
-        <select {...rest}>
+        <select {...rest} value={this.props.value}>
           <option value="">Select One</option>
           <option value="grapefruit">Grapefruit</option>
           <option value="lime">Lime</option>
           <option selected value="coconut">Coconut</option>
           <option value="mango">Mango</option>
         </select>
+        {hint}
       </div>
     );
   }

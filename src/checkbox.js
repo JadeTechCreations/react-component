@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 
 class Checkbox extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class Checkbox extends React.Component {
           id="subscribeNews"
           name="subscribe"
           value="newsletter" {...rest}/>
-        <label for="subscribeNews">Subscribe to {this.props.name} newsletter?</label>
+        <label htmlFor="subscribeNews">Subscribe to {this.props.name} newsletter?</label>
         {hint}
       </div>
     );

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'; //eslint-disable-line
 
 class Form extends Component {
   render() {
