@@ -29,8 +29,16 @@ var Form = function (_React$Component) {
       return _react2.default.createElement(
         'form',
         null,
-        this.props.name,
-        this.props.children
+        _react2.default.createElement(
+          'div',
+          null,
+          this.props.name
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          this.props.children
+        )
       );
     }
   }]);

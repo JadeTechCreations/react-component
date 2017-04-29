@@ -4,8 +4,12 @@ class Form extends React.Component {
   render() {
     return (
       <form>
-        {this.props.name}
-        {this.props.children}
+        <div>
+          {this.props.name}
+        </div>
+        <div>
+          {this.props.children}
+        </div>
       </form>
     );
   }
