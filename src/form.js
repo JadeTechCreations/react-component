@@ -2,10 +2,15 @@ import React, {Component} from 'react';
 
 class Form extends Component {
   render() {
+    const { containerClassName, hint, ...rest } = this.props;
+
     return (
-      <form>
-        {this.props.children}
-      </form>
+      <div className={containerClassName}>
+        {hint}
+        <form {...rest}>
+          {this.props.children}
+        </form>
+      </div>
     );
   }
 }

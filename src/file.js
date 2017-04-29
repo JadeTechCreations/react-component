@@ -2,11 +2,15 @@ import React from 'react';
 
 class File extends React.Component {
   render() {
-    const {name} = this.props;
+    const { containerClassName, hint, name, ...rest } = this.props;
+
     return (
-      <div>
-        <input type="file" id="input" />
+      <div className={containerClassName}>
+        <input
+          type="file"
+          id="input" {...rest} />
         <span>{name}</span>
+        {hint}
       </div>
     );
   }
