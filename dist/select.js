@@ -60,7 +60,7 @@ var Select = function (_React$Component) {
           ),
           _react2.default.createElement(
             "option",
-            { selected: true, value: "coconut" },
+            { value: "coconut" },
             "Coconut"
           ),
           _react2.default.createElement(
