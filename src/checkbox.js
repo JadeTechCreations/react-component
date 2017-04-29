@@ -2,7 +2,12 @@ import React from 'react';
 
 class Checkbox extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return (
+      <div>
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
+        <label for="subscribeNews">Subscribe to {this.props.name} newsletter?</label>
+      </div>
+    );
   }
 }
 

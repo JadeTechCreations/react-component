@@ -2,7 +2,17 @@ import React from 'react';
 
 class Select extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return (
+      <div>
+      <select>
+        <option value="">Select One</option>
+        <option value="grapefruit">Grapefruit</option>
+        <option value="lime">Lime</option>
+        <option selected value="coconut">Coconut</option>
+        <option value="mango">Mango</option>
+      </select>
+      </div>
+    );
   }
 }
 

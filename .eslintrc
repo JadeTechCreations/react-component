@@ -13,8 +13,8 @@
     'node': true
   },
   'globals': {
-        'require': true,
-        'React': true
+    'require': true,
+    'React': true
   },
   'extends': 'eslint:recommended',
   'ecmaFeatures': {

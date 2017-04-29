@@ -2,7 +2,9 @@ import React from 'react';
 
 class Text extends React.Component {
   render() {
-    return <h1>Hello, {this.props.name}</h1>;
+    return (
+      <input type="text" name="name" value={this.props.name}/>
+    );
   }
 }
 
