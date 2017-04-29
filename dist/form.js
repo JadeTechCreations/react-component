@@ -14,8 +14,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Form = function (_React$Component) {
-  _inherits(Form, _React$Component);
+var Form = function (_Component) {
+  _inherits(Form, _Component);
 
   function Form() {
     _classCallCheck(this, Form);
@@ -29,21 +29,12 @@ var Form = function (_React$Component) {
       return _react2.default.createElement(
         'form',
         null,
-        _react2.default.createElement(
-          'div',
-          null,
-          this.props.name
-        ),
-        _react2.default.createElement(
-          'div',
-          null,
-          this.props.children
-        )
+        this.props.children
       );
     }
   }]);
 
   return Form;
-}(_react2.default.Component);
+}(_react.Component);
 
 module.exports.Form = Form;

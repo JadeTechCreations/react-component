@@ -1,15 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class Form extends React.Component {
+class Form extends Component {
   render() {
     return (
       <form>
-        <div>
-          {this.props.name}
-        </div>
-        <div>
-          {this.props.children}
-        </div>
+        {this.props.children}
       </form>
     );
   }
