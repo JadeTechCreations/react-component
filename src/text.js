@@ -1,4 +1,5 @@
 import React from 'react'; //eslint-disable-line
+import inputFactory from './inputFactory';
 
 class Text extends React.Component {
   render() {
@@ -20,4 +21,4 @@ class Text extends React.Component {
   }
 }
 
-module.exports.Text = Text;
+module.exports.Text = inputFactory(Text);
