@@ -1,10 +1,14 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _validator = require("validator");
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _validator = require('validator');
 
 var _validator2 = _interopRequireDefault(_validator);
 
@@ -16,11 +20,11 @@ exports.default = {
       return _validator2.default.isEmail(value);
     },
     hint: function hint(value) {
-      return React.createElement(
-        "span",
-        { className: "form-error is-visible" },
+      return _react2.default.createElement(
+        'span',
+        { className: 'form-error is-visible' },
         value,
-        " is not an Email."
+        ' is not an Email.'
       );
     }
   },
@@ -29,10 +33,10 @@ exports.default = {
       return value.toString().trim();
     },
     hint: function hint() {
-      return React.createElement(
-        "span",
-        { className: "form-error is-visible" },
-        "Required"
+      return _react2.default.createElement(
+        'span',
+        { className: 'form-error is-visible' },
+        'Required'
       );
     }
   },
@@ -41,11 +45,11 @@ exports.default = {
       return value.length > 0;
     },
     hint: function hint() {
-      return React.createElement(
-        "span",
-        { className: "form-error is-visible" },
-        "Required"
+      return _react2.default.createElement(
+        'span',
+        { className: 'form-error is-visible' },
+        'Required'
       );
     }
   }
-};
+}; //eslint-disable-line

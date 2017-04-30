@@ -1,3 +1,4 @@
+import React from 'react'; //eslint-disable-line
 import validator from 'validator';
 
 export default {
