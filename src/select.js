@@ -1,4 +1,5 @@
 import React from 'react'; //eslint-disable-line
+import selectFactory from './selectFactory';
 
 class Select extends React.Component {
   render() {
@@ -16,4 +17,4 @@ class Select extends React.Component {
   }
 }
 
-module.exports.Select = Select;
+module.exports.Select = selectFactory(Select);
