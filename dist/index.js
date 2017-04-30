@@ -18,9 +18,13 @@ var _require5 = require('./select'),
 var _require6 = require('./form'),
     Form = _require6.Form;
 
+var _require7 = require('./rules'),
+    rules = _require7.rules;
+
 module.exports.Text = Text;
 module.exports.Checkbox = Checkbox;
 module.exports.File = File;
 module.exports.Button = Button;
 module.exports.Select = Select;
 module.exports.Form = Form;
+module.exports.rules = rules;
