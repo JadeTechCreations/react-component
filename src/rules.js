@@ -1,7 +1,7 @@
 import React from 'react'; //eslint-disable-line
 import validator from 'validator';
 
-export default {
+var rules = {
   email: {
     rule: value => validator.isEmail(value),
     hint: value => <span className="form-error is-visible">{value} is not an Email.</span>
@@ -17,3 +17,5 @@ export default {
     hint: () => <span className="form-error is-visible">Required</span>
   }
 };
+
+export default rules;

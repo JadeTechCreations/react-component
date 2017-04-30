@@ -14,7 +14,7 @@ var _validator2 = _interopRequireDefault(_validator);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
+var rules = {
   email: {
     rule: function rule(value) {
       return _validator2.default.isEmail(value);
@@ -53,3 +53,4 @@ exports.default = {
     }
   }
 }; //eslint-disable-line
+exports.default = rules;
