@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -30,44 +30,25 @@ var Select = function (_React$Component) {
   }
 
   _createClass(Select, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       var _props = this.props,
           containerClassName = _props.containerClassName,
           hint = _props.hint,
-          rest = _objectWithoutProperties(_props, ["containerClassName", "hint"]);
+          rest = _objectWithoutProperties(_props, ['containerClassName', 'hint']);
 
       return _react2.default.createElement(
-        "div",
+        'div',
         { className: containerClassName },
         _react2.default.createElement(
-          "select",
+          'select',
           _extends({}, rest, { value: this.props.value }),
           _react2.default.createElement(
-            "option",
-            { value: "" },
-            "Select One"
+            'option',
+            { value: '' },
+            'Select One'
           ),
-          _react2.default.createElement(
-            "option",
-            { value: "grapefruit" },
-            "Grapefruit"
-          ),
-          _react2.default.createElement(
-            "option",
-            { value: "lime" },
-            "Lime"
-          ),
-          _react2.default.createElement(
-            "option",
-            { value: "coconut" },
-            "Coconut"
-          ),
-          _react2.default.createElement(
-            "option",
-            { value: "mango" },
-            "Mango"
-          )
+          this.props.children
         ),
         hint
       );
